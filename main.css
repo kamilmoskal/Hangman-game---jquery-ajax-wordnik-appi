@@ -1,0 +1,138 @@
+body{
+    padding:0;
+    margin:0;
+    background:rgb(0, 0, 0);
+}
+.container{
+    width:100%;
+    max-width:1000px;
+    box-sizing: border-box;
+    padding:20px;
+    margin:0 auto;
+    text-align: center;
+}
+
+/*   word bar   */
+
+.word{
+    text-align: center;
+    margin:20px 0;
+}
+.letter{
+    width:30px;height: 30px; border-bottom:2px solid white;
+    display: inline-block;
+    color:white;
+    margin:0 4px;
+    text-transform: uppercase;
+    font-size: 26px;   
+}
+
+/*   used letters bar   */
+
+.usedletters{
+    color:white;
+    font-size:26px;
+    margin-bottom:20px;
+}
+.usedletter{
+    color:white;
+    font-size:26px;
+    display: inline-block;
+    text-transform: uppercase;
+    margin:0 2px;
+}
+
+/*   hint gamestate bar   */
+
+.gamestate{
+    color:white;
+    font-size:30px;
+    margin-bottom:20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.gamestate p {
+    font-size:16px;
+    text-transform: none;
+    font-weight: 200;
+}
+.hint{
+    color:white;
+    font-size:20px;
+    margin-bottom:20px;
+}
+
+/*    heart shape + lifes bar   */
+
+.lifes{
+    text-align: center;
+    padding:10px 0;
+}
+
+.heart {
+    display: inline-block;
+    margin:0 4px;
+    background-color: white;
+    height: 10px;
+    transform: rotate(-45deg);
+    width: 10px;
+}
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  height: 10px;
+  position: absolute;
+  width: 10px;
+}
+.heart:before {
+    top: -5px;
+    left: 0;
+  }
+.heart:after{
+    top: 0;
+    left: 5px;
+}
+
+/*    hangman bar    */
+
+.hangman{
+    width:200px;
+    border:1px solid white;
+    height:240px;
+    margin:0 auto;
+    position: relative;
+    margin-bottom:20px;
+}
+.platform{position: absolute;width:70px;height:10px;background:white;bottom:0;left:40px;display:none}
+.pillar{position: absolute;width:10px;height:200px;background:white;bottom:0;left:60px;display:none}
+.board{position: absolute;width:100px;height:8px;background:white;top:50px;left:40px;display:none}
+.rope{position: absolute;width:2px;height:30px;background:white;top:50px;left:130px;display:none}
+.head{position: absolute;height: 30px;width: 30px;border-radius: 50%;background:white;top:72px;left:120px;display:none}
+.body{position: absolute;width:4px;height:50px;background:white;top:100px;left:130px;display:none}
+.lefthand{position: absolute;width:3px;height:40px;background:white;top:100px;left:124px; transform: rotate(20deg);display:none}
+.righthand{position: absolute;width:3px;height:40px;background:white;top:100px;left:138px; transform: rotate(-20deg);display:none}
+.leftleg{position: absolute;width:3px;height:40px;background:white;top:148px;left:126px; transform: rotate(10deg);display:none}
+.rightleg{position: absolute;width:3px;height:40px;background:white;top:148px;left:136px; transform: rotate(-10deg);display:none}
+
+/*    buttons    */
+
+button{
+    display: block;
+    margin:10px auto;
+    border:none;
+    color:white;
+    border: 1px solid white;
+    font-size:20px;
+    border-radius:4px;
+    background-color:transparent;
+    padding:10px 20px;
+    width:160px;
+    margin-bottom:20px;
+}
+button:hover{
+    cursor: pointer;
+    color:black;
+    background:white;
+}

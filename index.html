@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="word"></div>
+            <div class="usedletters">Your letters:</div>
+            <div class="gamestate" style="display: none">You Won!</div>
+            <div class="hint" style="display: none"></div>
+            <div class="lifes">
+                    <div class="heart"></div>
+                    <div class="heart"></div>
+                    <div class="heart"></div>
+                    <div class="heart"></div>
+                    <div class="heart"></div>
+                    <div class="heart"></div>
+                    <div class="heart"></div>
+                    <div class="heart"></div>
+                    <div class="heart"></div>
+            </div>
+            <div class="hangman">
+                <div class="platform" id="hg1"></div>
+                <div class="pillar" id="hg2"></div>
+                <div class="board" id="hg3"></div>
+                <div class="rope" id="hg4"></div>
+                <div class="head" id="hg4"></div>
+                <div class="body" id="hg5"></div>
+                <div class="lefthand" id="hg6"></div>
+                <div class="righthand" id="hg7"></div>
+                <div class="leftleg" id="hg8"></div>
+                <div class="rightleg" id="hg9"></div>
+            </div>
+            <button id="getWord">New Word</button>
+            <button id="getHint" style="font-size:16px;">Get a Hint<br> (cost 4 lifes)</button>
+        </div>
+    </main>
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
